@@ -35,7 +35,7 @@ class DescontoRequest extends FormRequest
                 return [
                     'nome' => 'required|max:200|string',
                     'desconto' => 'required|integer', 
-                    'produto_id'=>'required|exists:desconto_produtos,id|integer', 
+                    'produto_id'=>'required|exists:produtos,id|integer', 
                 ];
                 break;
             default:
